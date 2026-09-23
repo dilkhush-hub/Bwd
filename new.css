@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(174, 226, 17);
+}
+.animat{
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgb(255, 100, 95);
+    background-color: rgb(10, 25, 241) ;
+    color: rgb(220, 229, 221);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-left: 200px;
+    margin-top: 300px;
+    animation-duration: 8S;
+    animation-name: spin;
+
+
+
+}
+@keyframes spin {
+    0%{
+        transform:  rotate(0deg);
+        background-color: salmon;
+        background-color: rgb(19, 214, 97);
+    }
+    50%{
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 2;
+
+    }
+}
+
